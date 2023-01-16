@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import NavBar from './Navbar';
 import Pyramid from './Pyramid';
+import { EyeContext } from './eyeContext';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <body> 
-    <NavBar />
-    <Pyramid/>
-  </body>
+    <body> 
+      <NavBar />
+      <Pyramid/>
+    </body>
 );
 

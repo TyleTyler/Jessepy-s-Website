@@ -1,5 +1,8 @@
 
+import { useContext, useEffect } from 'react';
 import './App.css';
+
+
 
 function NavBar() {
   return (

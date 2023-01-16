@@ -3,7 +3,23 @@
   width: 100px;
   height: 100px;
 }
-.Pyramid{
-  width: 100px;
-  height: 10px;
+#triangle {
+  position: absolute;
+  width: 95vw;
+  height: 1557.05px;
+  z-index: 2;
+}
+#pupil{
+  width: 95vw;
+  height: 1557.05px;
+  position: absolute;
+  z-index: 0;
+}
+#iris{
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  z-index: 1;
+  width: 95vw;
+  height: 1200px;
 }

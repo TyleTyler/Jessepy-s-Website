@@ -7,10 +7,12 @@ import './App.css';
 function NavBar() {
   return (
     <div className="NavBar">
-        <div id="JesepyName"> Jessepy</div>
-        <div id="Gallery"> Gallery</div>
-        <div id="Murals"> Murals</div>
-        <div id="AboutMe">About Me</div>
+        <div id="JesepyName" className='navEl'> Jessepy</div>
+        <div id="AboutMe" className='navEl'>About Me</div>
+        <div className='midPyramid'> 
+          <div id="Gallery" className='navEl'> Gallery</div>
+          <div id="Murals" className='navEl'> Murals</div>
+        </div>
     </div>
   );
 }

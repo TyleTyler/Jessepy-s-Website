@@ -1,7 +1,6 @@
 import { useContext, useEffect, useRef, useState} from 'react';
 import './App.css';
 import pryamid from "./assets/PyramidTrans.png"
-import { EyeContext } from './eyeContext';
 import iris from "./assets/iris.png"
 import pupil from "./assets/pupil.png"
 
@@ -31,7 +30,7 @@ const Pyramid = () => {
         <img id="triangle" src= { pryamid } ref={base}/>
         <img id="pupil" src={pupil} />
         <div>
-            <img id="iris" src={iris} style={{transform: `rotate(${angleDeg - 90 }deg)`}} />
+            <img id="iris" src={iris} style={{transform: `rotate(${angleDeg - 70 }deg)`}} />
         </div>
     </div>
     );

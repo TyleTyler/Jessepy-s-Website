@@ -3,6 +3,9 @@ import './App.css';
 import pryamid from "./assets/PyramidTrans.png"
 import iris from "./assets/iris.png"
 import pupil from "./assets/pupil.png"
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
 
 const Pyramid = () => {
     function angle(cx, cy, ex , ey){

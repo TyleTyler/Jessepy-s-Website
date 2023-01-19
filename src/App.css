@@ -69,15 +69,25 @@
 }
 .gallery{
   margin-top: -10%;
-  background-color: green;
+  background-color: white;
   height: 80vh;
   width: 100vw;
 }
 .entry{
   position: relative;
   top: 20%;
-  left: 90%;
+  left: 10%;
   height: 50%;
   width: 14%;
   background-color: grey;
+  transition: 0.5s;
+  box-shadow: 0 1px 5px #00000099;
+  perspective-origin: 50% 50%;
+  perspective: 211px;
+  transform: rotate3d(0);
+}
+
+.entry:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
 }

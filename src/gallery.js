@@ -1,11 +1,13 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
+import Pyramid from "./Pyramid";
 gsap.registerPlugin(ScrollTrigger)
 
 
 const Gallery = () => {
     const entry = useRef([])
+    const galleryTop = useRef(null)
     const rotateToMouse = (e)=>{
         const bounds = e.target.getBoundingClientRect()
         const mouseX = e.clientX;
@@ -41,8 +43,12 @@ const Gallery = () => {
         })
     })
  
-    return ( <div className="gallery" >
-        <div className="entry" onMouseMove={(e)=>{rotateToMouse(e)}} ref={entry}> </div>
+    return ( <div className="gallery" ref={galleryTop}>
+
+        <div className="entry" onMouseMove={(e)=>{rotateToMouse(e)}} onClick={(e)=>{
+            e.target.classList.toggle("galleryClick")
+            galleryTop.current.scrollIntoView()
+        }} ref={entry}> </div>
     </div> );
 }
  

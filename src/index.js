@@ -8,7 +8,7 @@ import Gallery from './gallery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <body> 
+    <body>
       <NavBar />
       <Pyramid/>
       <Gallery />
